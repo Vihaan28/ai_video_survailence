@@ -1,0 +1,55 @@
+<html>
+<head>
+
+	<title>AI Video Surveillance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<center>
+<h1 class="btn btn-primary heading"> AI Video Surveillance </h1>
+
+<br><br>
+<button onclick="start()" id="startbtn" class="btn btn-success"> START </button>
+
+<br>
+<h3 id="status" class="btn btn-danger"> </h3>
+
+<br>
+<h3 id="nob" class="btn btn-warning"> </h3>
+
+<br>
+<div class="vol_div">
+<input type="range" min="0" max = "1" value="1"  orient = "vertical" id="vol_slider_id" onchange="slider_vol()">
+
+<br>
+<label class="btn btn-info" id="vol_text"> Volume </label>
+</div>
+<div class="speed_div">
+<input type="range" min="0" max = "5" value="1" orient = "vertical" id="speed_slider_id"  onchange="slider_speed()">
+
+<br>
+<label  class="btn btn-info" id="speed_text"> speed </label>
+</div>
+</center>
+
+<div class="footer">
+  <h2 id="footer"> DEVELOPED BY - VIHAAN MITTAL </h2>
+</div>
+
+
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
